@@ -17,6 +17,8 @@ GitMap is a small Go tool designed to scan a specified directory and its subdire
 go get github.com/lachlovy/gitmap
 ```
 
+Or just download from [Release Page](https://github.com/lachlovy/gitmap/releases).
+
 ### Command Line Arguments
 
 - `--scan-dir`: Directory to be scanned (defaults to current directory if not specified)
@@ -26,11 +28,15 @@ go get github.com/lachlovy/gitmap
 ## Examples
 
 ```bash
+# Add executable permissions to tool
+# gitmap-darwin-arm64 is just an example, please choose a correct version to your os
+chmod u+x gitmap-darwin-arm64
+
 # Scan all Git repositories in the current directory and generate a yearly contribution heatmap
-gitmap
+gitmap-darwin-arm64
 
 # Scan a specific directory and generate last six-month contribution heatmap
-gitmap --scan-dir=/home/user/projects --date-range=SixMonth
+gitmap-darwin-arm64 --scan-dir=/home/user/projects --date-range=SixMonth
 ```
 
 ## Roadmap
